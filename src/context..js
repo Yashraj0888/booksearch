@@ -9,7 +9,7 @@ const AppProvider = ({ children }) => {
   const [searchParams, setSearchParams] = useState({
     title: "", // Start with an empty title, so user can search for anything
     author: "",
-    publishYear: "",
+   
     subject: ""
   });
   const [books, setBooks] = useState([]);
@@ -27,11 +27,11 @@ const AppProvider = ({ children }) => {
 
     if (params.title) query.append("title", params.title);
     if (params.author) query.append("author", params.author);
-    if (params.publishYear) query.append("first_publish_year", params.publishYear); // Use 'first_publish_year'
+   
     if (params.subject) query.append("subject", params.subject);
     query.append("page", currentPage);
     query.append("limit", booksPerPage);
-    query.append("fields", "key,author_name,cover_i,edition_count,first_publish_year,title,ebook_access");
+    query.append("fields", "key,author_name,cover_i,edition_count,title,ebook_access");
 
     return query.toString();
   };
@@ -62,7 +62,7 @@ const AppProvider = ({ children }) => {
             author_name,
             cover_i,
             edition_count,
-            first_publish_year,
+       
             title,
             ebook_access, // Extract `ebook_access` from the response
           } = bookSingle;
@@ -72,7 +72,6 @@ const AppProvider = ({ children }) => {
             author: author_name,
             cover_id: cover_i,
             edition_count: edition_count,
-            first_publish_year: first_publish_year,
             title: title,
             ebook_access: ebook_access === "no_ebook" ? false : true, // Adjust logic for "no_ebook"
           };

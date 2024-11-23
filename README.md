@@ -1,8 +1,8 @@
-# FindYourBook Web Application 📚
+# BookFinder Web Application 📚
 
 ## Introduction 📖
 
-**FindYourBook** is a modern, dynamic web application built with **React.js** that revolutionizes the way users discover and explore books. This project was born from the vision to create a seamless, intuitive platform for book enthusiasts to easily find their next read. 🎯
+**BookFinder** is a modern, dynamic web application built with **React.js** that revolutionizes the way users discover and explore books. This project was born from the vision to create a seamless, intuitive platform for book enthusiasts to easily find their next read. 🎯
 
 ### What Makes FindYourBook Special? ✨
 

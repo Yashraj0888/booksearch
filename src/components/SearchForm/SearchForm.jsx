@@ -10,16 +10,15 @@ const SearchForm = () => {
   const { setSearchParams } = useGlobalContext();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const [year, setYear] = useState('');
-  const [subject, setSubject] = useState('');
+ const [subject, setSubject] = useState('');
   const [isDisabled, setIsDisabled] = useState(true);
 
   const navigate = useNavigate();
 
   useEffect(() => {
     // Check if any field has a value
-    setIsDisabled(!(title || author || year || subject));
-  }, [title, author, year, subject]);
+    setIsDisabled(!(title || author || subject));
+  }, [title, author, subject]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,21 +26,13 @@ const SearchForm = () => {
     // Trim input values
     const trimmedTitle = title.trim();
     const trimmedAuthor = author.trim();
-    const trimmedYear = year.trim();
+
     const trimmedSubject = subject.trim();
 
-    // Validate year if provided
-    const isYearValid = trimmedYear ? !isNaN(trimmedYear) && trimmedYear.length === 4 : true;
-
-    if (trimmedYear && !isYearValid) {
-      alert("Please enter a valid 4-digit year.");
-      return;
-    }
-
+ 
     const searchParams = {};
     if (trimmedTitle) searchParams.title = trimmedTitle;
     if (trimmedAuthor) searchParams.author = trimmedAuthor;
-    if (isYearValid && trimmedYear) searchParams.first_publish_year = trimmedYear;
     if (trimmedSubject) searchParams.subject = trimmedSubject;
 
     setSearchParams(searchParams); // Set search params to global context
