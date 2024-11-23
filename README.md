@@ -52,7 +52,7 @@ The project addresses common challenges faced by book readers:
 ## Live Demo 🌐
 
 Check out the live demo of the application at:  
-[FindYourBook](https://findyourbook-1.onrender.com/) 🔗
+[Book Finder](https://booksearch-ep7m.onrender.com/) 🔗
 
 ## Setting Up Local Development Environment ⚙️
 
