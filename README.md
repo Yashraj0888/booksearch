@@ -68,7 +68,7 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Yashraj0888/findyourbook.git
+git clone https://github.com/Yashraj0888/booksearch.git
 ```
 2. Navigate to project directory:
 
@@ -183,4 +183,4 @@ This project is licensed under the MIT License.
 
 For any inquiries or suggestions, feel free to reach out!
 
-- **Project Repository**: [https://github.com/Yashraj0888/findyourbook.git](https://github.com/Yashraj0888/findyourbook.git) 🔗
+- **Project Repository**: [https://github.com/Yashraj0888/booksearch.git](https://github.com/Yashraj0888/findyourbook.git) 🔗
